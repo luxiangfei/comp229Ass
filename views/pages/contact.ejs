@@ -1,0 +1,52 @@
+<%- include ('../common/head') %>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<body>
+    <header>
+        <%- include ('../common/header') %>
+
+    </header>
+    <div class="container">
+      
+
+        <div class="row">
+          <div class="col-md-6">
+              <h1>Contact Me</h1>
+              
+              <form action="/contact" method="post">
+                
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+          <div class="col-md-6">
+              <h2>Contact Information</h2>
+              <p><strong>Email:</strong> xlu76@my.centennialcollege.ca</p>
+              <p><strong>Phone:</strong> +1 (289) 830-9799</p>
+              
+          </div>
+      </div>
+
+
+    
+      </div>
+    <footer>
+        <%- include ('../common/footer') %>
+    </footer>
+</body>
+</html>
